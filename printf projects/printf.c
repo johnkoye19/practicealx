@@ -5,7 +5,14 @@ int _printf(const char *format, ...)
 	int num_printed;
 	va_list printf;
 	va_start(printf, format);
-	
+	psuedocode
+	{
+		for (i = 0; i < a//a is the length of string format; i++)
+		     {
+			     print;
+		     }
+	}
+	//we are trying to model the printf function. the printf function takes a format variable "some string", returns the number of characters readc through. it can take any number of type specifiers(%c%d). it prints it.
 	va_end(printf);
 	
 	return (num_printed);
