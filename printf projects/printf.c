@@ -17,7 +17,7 @@ int _printf(const char *format, ...)
 	
 	return (num_printed);
 }
-		     
+//string length		     
 int _strlen(char *s)
 {
 	int i = 0;
@@ -26,6 +26,18 @@ int _strlen(char *s)
 		i++;
 	}
 	return (i);
+}
+		     
+int centCount(char *s)
+{
+	if (*(s + i))
+	{
+		if ((*(s + i)) == '%')
+		{
+			a++;
+			centCount(char *s);
+		}
+	}
 }
 Returns: the number of characters printed (excluding the null byte used to end output to strings)
 write output to stdout, the standard output stream
