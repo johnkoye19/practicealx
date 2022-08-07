@@ -27,17 +27,20 @@ int _strlen(char *s)
 	}
 	return (i);
 }
-		     
+//length of '%'		     
 int centCount(char *s)
 {
-	if (*(s + i))
+	char *q = s;
+	if (*s)
 	{
-		if ((*(s + i)) == '%')
+	    q = q + 1;
+	    
+		if (*s == '%')
 		{
-			a++;
+			return (1 + centCount((q)));
 		}
 	}
-	centCount(char *(s + i));
+	return (0);
 }
 Returns: the number of characters printed (excluding the null byte used to end output to strings)
 write output to stdout, the standard output stream
