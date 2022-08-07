@@ -35,9 +35,9 @@ int centCount(char *s)
 		if ((*(s + i)) == '%')
 		{
 			a++;
-			centCount(char *s);
 		}
 	}
+	centCount(char *(s + i));
 }
 Returns: the number of characters printed (excluding the null byte used to end output to strings)
 write output to stdout, the standard output stream
