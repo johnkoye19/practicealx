@@ -13,8 +13,11 @@ int _printf(const char *format, ...)
 				centCount(char *s);
 			}
 			print;
-		}
-		    
+//return -1 if % is odd
+//if even, check actual length is half.
+//if even, return total strength- centlength/2
+	
+		}		    
 	}
 	//we are trying to model the printf function. the printf function takes a format variable "some string", returns the number of characters readc through. it can take any number of type specifiers(%c%d). it prints it.
 	va_end(printf);
